@@ -33,3 +33,13 @@ The platform simplifies policy handling, premium calculation, risk assessment, a
 -  Dashboard with Policy & Premium Overview
 -  Admin Panel for User & Policy Control
   
+## Technology Stack
+
+| Layer           | Technology                  |
+|-----------------|----------------------------|
+| Backend         | Java, Spring Boot           |
+| Frontend        | React, HTML, CSS, JavaScript |
+| Database        | MySQL                       |
+| IDE             | IntelliJ IDEA               |
+| Build Tools     | Maven                       |
+| Version Control | GitHub                      |
