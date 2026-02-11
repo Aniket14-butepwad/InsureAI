@@ -40,6 +40,6 @@ The platform simplifies policy handling, premium calculation, risk assessment, a
 | Backend         | Java, Spring Boot           |
 | Frontend        | React, HTML, CSS, JavaScript |
 | Database        | MySQL                       |
-| IDE             | IntelliJ IDEA               |
+| IDE             | IntelliJ IDEA / VS Code           |
 | Build Tools     | Maven                       |
 | Version Control | GitHub                      |
