@@ -1,41 +1,35 @@
-InsureAI : Corporate Insurance Automation & Intelligence System
+# InsureAI: Corporate Policy Automation & Intelligence System
 
-InsureAI is a full-stack web application developed during the Infosys Virtual Internship (Batch 6.0 – Batch 13).
+InsureAI is an intelligent web-based insurance management system designed to automate, manage, and optimize corporate insurance workflows.  
+The platform simplifies policy handling, premium calculation, risk assessment, and claims processing using modern full-stack technologies.
 
-The system is designed to automate corporate insurance operations by managing policies, calculating premiums dynamically, and recommending suitable policies based on customer requirements and risk factors.
+---
 
-It demonstrates practical implementation of React, Spring Boot, and MySQL in building a scalable enterprise-level application.
+## Project Information
 
-Project Information
+- **Internship:** Infosys Virtual Internship  
+- **Start Date:** 2nd February  
+- **Duration:** 8 Weeks  
+- **Project Type:** Full Stack Web Application  
+- **Domain:** Insurance Technology (InsurTech)
 
-Start Date: 2 February
+---
 
-Duration: 8 Weeks
+## Project Objectives
 
-Internship: Infosys Virtual Internship
+- Automate corporate insurance policy management  
+- Provide dynamic premium calculation based on risk factors  
+- Enable claim processing and tracking  
+- Improve decision-making with intelligent risk assessment  
+- Provide user-friendly dashboard for policy monitoring  
 
-Batch: 6.0 – Batch 13
+---
+## Features
 
-Features
-
-Policy Management (Add, Update, Delete, View)
-
-Dynamic Premium Calculator
-
-Smart Policy Filter & Recommendation System
-
-Claims Submission and Tracking
-
-Real-Time Dashboard
-
-Role-Based User Authentication
-
-Technology Stack
-Layer	Technology
-Frontend	React, HTML, CSS, JavaScript
-Backend	Java, Spring Boot
-Database	MySQL
-ORM	JPA / Hibernate
-Build Tool	Maven
-Version Control	Git & GitHub
-IDE	IntelliJ IDEA / VS Cod
+-  Secure User Authentication (Email/Mobile Login)
+-  Policy Management (Create, Read, Update, Delete)
+-  Dynamic Premium Calculator (Risk-Based)
+-  Risk Assessment & Policy Recommendation
+-  Dashboard with Policy & Premium Overview
+-  Admin Panel for User & Policy Control
+  
