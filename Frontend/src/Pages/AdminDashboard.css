@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --sidebar-width: 280px;
+  --header-height: 80px;
+  --bg-main: #f4f7fe;
+  --sidebar-bg: #111827;
+  --accent-blue: #4318FF;
+  --text-main: #1B2559;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* Layout Wrapper */
+.dashboard-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: var(--sidebar-width);
+  background: var(--sidebar-bg);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  width: 100%;
+  text-align: left;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+}
+
+.nav-item.active {
+  background: var(--accent-blue);
+  color: white;
+  box-shadow: 0px 10px 20px rgba(67, 24, 255, 0.2);
+}
+
+/* Main Content Area */
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* Prevents flex items from overflowing */
+}
+
+/* Top Header */
+.top-header {
+  height: var(--header-height);
+  background: rgba(244, 247, 254, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.search-bar {
+  background: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 400px;
+  box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-weight: 500;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logout-btn {
+  background: #FFEDEB;
+  color: #EE5D50;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  background: #FF5D5D;
+  color: white;
+}
+
+/* Content Body */
+.content-body {
+  flex: 1;
+  padding: 0 40px 40px 40px;
+  overflow-y: auto;
+}
+
+/* Card Styling */
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
+  border: none;
+}
+
+/* Water Risk Meter */
+.water-glass {
+  width: 140px;
+  height: 200px;
+  border: 6px solid #E9EDF7;
+  border-top: none;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+
+.water-fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(180deg, #4318FF 0%, #312ECB 100%);
+  transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+/* Card Title Styling */
+.card-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #1B2559;
+  margin: 0;
+}
+
+/* Filter Dropdown */
+.filter-select {
+  background: #F4F7FE;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #4318FF;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Trend Indicator in Stat Card */
+.trend-pill {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #E6FFFA;
+  color: #01B574;
+  margin-left: 10px;
+}
+
+/* Custom Progress Bars for Age/Location */
+.bg-indigo-600 { background-color: #4318FF; }
+.bg-indigo-400 { background-color: #707EAE; }
+.bg-blue-500 { background-color: #3b82f6; }
+.bg-pink-500 { background-color: #ec4899; }

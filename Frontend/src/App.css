@@ -1,0 +1,265 @@
+#root {
+  margin: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.logo {
+  height: 5px;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  margin-bottom: 0px;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 0px;
+}
+
+.read-the-docs {
+  color: #888;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #ede6e6;
+  color: #222;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  padding-right: 15px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0d6efd;
+  height: 100px; 
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 50px;
+}
+li{
+  font-size: 20px;
+}
+li:hover{
+  color: #0d6efd;
+}
+
+.login-btn {
+  background: #2563eb;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #1e40af;
+}
+.dashboard-btn {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+}
+
+.dashboard-btn:hover {
+  background: #1d4ed8;
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
+}
+
+/* ===== LOGOUT BUTTON (OUTLINE STYLE) ===== */
+.logout-btn-nav {
+  background: transparent;
+  color: #ef4444;
+  border: 1.8px solid #ef4444;
+}
+
+.logout-btn-nav:hover {
+  background: #ef4444;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(239, 68, 68, 0.35);
+  transform: translateY(-1px);
+}
+
+/* ===== LOGIN BUTTON (CLEAN DARK) ===== */
+.login-btn-primary {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.login-btn-primary:hover {
+  background: #020617;
+  transform: translateY(-1px);
+}
+
+/* HERO */
+
+.hero {
+  height: 400px;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.btn-primary {
+  padding: 12px 20px;
+  border: none;
+  margin-left: 327px;
+  background: #ffffff;
+  color: #0d6efd;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  
+}
+.btn-primary:hover{
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* PRODUCTS */
+
+.products {
+  padding: 80px;
+  text-align: center;
+  background: whitesmoke;
+}
+
+.products h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: #ffffff;              /* Clean white base */
+  border: 1px solid #e5e7eb;        /* Soft light border */
+  border-radius: 16px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  font-size: 25px;
+}
+
+/* Hover Effect */
+
+.product-card:hover {
+  background: #0d6efd;              /* Professional blue */
+  color: #ffffff;
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(13, 110, 253, 0.25);
+}
+
+/* STATS */
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+  background: linear-gradient(135deg, #4189ee, #6101fd);
+  text-align: center;
+}
+
+.stats h3 {
+  font-size: 32px;
+  color: #f5f6f9;
+  
+}
+.stats p{
+  color: white;
+}
+
+/* WHY US */
+
+.whyus {
+  padding: 80px;
+  text-align: center;
+  background: linear-gradient(135deg, #b1ccf2, #6f5eed);
+  font-size: 22px;
+}
+
+.why-grid {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

@@ -1,0 +1,77 @@
+.subpage {
+  margin-top: 10px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+}
+
+.big {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+/* table */
+
+.table-card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+thead {
+  background: #f1f5f9;
+}
+
+/* badges */
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge.active {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.badge.pending {
+  background: #fef9c3;
+  color: #ca8a04;
+}
